@@ -119,10 +119,6 @@ with st.expander("View Feature Distributions"):
     st.subheader('Feature Distributions')
     # Plot distributions of each feature
     for i, feature in enumerate(feature_names):
-        sns.histplot(X[feature], kde=True, ax=ax)
-        ax.set_title(f'Distribution of {feature.replace("_", " ").title()}')
-        st.pyplot(fig)
-        plt.close(fig)
 
 with st.expander("View Pair Plot"):
     st.subheader('Pair Plot of Features')
