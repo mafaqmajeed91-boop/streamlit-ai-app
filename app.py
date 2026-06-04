@@ -117,14 +117,3 @@ st.markdown("Visualize the distribution of features and relationships within the
 
 with st.expander("View Feature Distributions"):
     st.subheader('Feature Distributions')
-    # Plot distributions of each feature
-    for i, feature in enumerate(feature_names):
-
-with st.expander("View Pair Plot"):
-    st.subheader('Pair Plot of Features')
-    # Create a pair plot to visualize relationships between features
-    fig_pair = sns.pairplot(X.assign(Species=y.map({0: 'Setosa', 1: 'Versicolor', 2: 'Virginica'})), hue='Species')
-    st.pyplot(fig_pair)
-    plt.close(fig_pair)
-
-st.sidebar.markdown("--- Developed by your friendly AI assistant --- ")
