@@ -5,11 +5,6 @@ import numpy as np
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
-git add requirements.txt
-git commit -m "added matplotlib dependency"
-git push
-import seaborn as sns
-
 # --- Load Models ---
 # Load the Logistic Regression model
 log_reg_model = joblib.load('model.pkl')
