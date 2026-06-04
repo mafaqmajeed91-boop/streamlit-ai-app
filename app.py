@@ -6,6 +6,9 @@ import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
  import matplotlib.pyplot as plt
+git add requirements.txt
+git commit -m "added matplotlib dependency"
+git push
 import seaborn as sns
 
 # --- Load Models ---
